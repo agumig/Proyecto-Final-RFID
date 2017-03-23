@@ -1,0 +1,8 @@
+Instalar iverilog y GTKWave:
+  ~$sudo apt-get install iverilog
+  ~$sudo apt-get install gtkwave
+
+Compilar archivos:
+  ~$iverilog nombre_archivo.v nombre_testbench.v -o nombre_salida
+  ~$vvp nombre_salida
+  ~$gtkwave nombre_archivo_generado.vcd
