@@ -17,7 +17,7 @@ reg out_data;	//Salida del codificador
 
   always @ (negedge clk, negedge in_enable)
     begin
-      if(!in_enable) begin
+      if(~in_enable) begin
 	out_data <= 1'b0;
 	count <= 4'b0;
       end
@@ -32,7 +32,7 @@ reg out_data;	//Salida del codificador
 	    
   always @ (posedge clk, negedge in_enable)
     begin
-       if(!in_enable) begin
+       if(~in_enable) begin
        	count <= 4'b0;
 	out_data <= 1'b0;
       end
