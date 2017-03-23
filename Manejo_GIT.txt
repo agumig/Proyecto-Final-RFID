@@ -1,0 +1,26 @@
+		  Instalacion:
+  ~$sudo apt-get install git
+  
+		  Configuracion:
+  ~$git config --global user.name "nombre_usuario"
+  ~$git config --global user.email "email_id"
+  
+		  Creacion del repositorio local
+-Creo la carpeta
+  ~$git init Proyecto-Final-RFID
+-Entrar a la carpeta
+  ~$cd Proyecto-Final-RFID
+-Creamos el README
+  ~$gedit README
+      
+		  Conectarse al repositorio remoto en GitHub
+  ~$git remote add origin https://github.com/agumig/Proyecto-Final-RFID.git
+  
+		  Agregar archivos al indice
+  ~$git add example.c
+  ~$git commit -m "Archivo ejemplo en lenguaje C"
+
+  
+		  Empujar contenido al repositorio remoto
+   ~$git push -u origin master
+   
